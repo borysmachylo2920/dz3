@@ -5,10 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoHandel</title>
+    <style>
+        table {
+            table-layout: fixed;
+            border-collapse: collapse;
+            border: 3px solid rgb(0, 0, 0);
+            width: 600px;
+        }
+        td {
+            padding: 10px;
+            border: 2px solid rgb(0, 0, 0);
+        }
+    </style>
 </head>
 <body>
-    <table>
-        
-    </table>
+<header>
+
+</header>
+    <main>
+    <form action="https://fom.in.ua/echo" method="post">
+        <table>
+             <thead>
+                <tr>
+                    <th colspan="2">
+                    Authorization
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="email"><b>Електронна пошта</b></label></td>
+                    <td><input type="email" placeholder="your email" id="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="pass"><b>Пароль</b></label></td>
+                    <td><input type="password" placeholder="yor password" id="pass" required> 
+                        <p><input type="checkbox"><i>Запам'ятати пароль</i></td></p>
+                </tr>
+            </tbody>
+        </table>
+            <p><button type="submit">Увійти</button>
+                <button type="reset">Очистити все</button>
+            </p>
+    </form>
+    </main>
 </body>
 </html>

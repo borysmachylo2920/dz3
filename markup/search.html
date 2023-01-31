@@ -8,121 +8,110 @@
 </head>
 <body style="background-image:url(./gallery/background1.png);">
     <h1><strong>Пошук</strong></h1>
-    <fieldset>
-        <legend><b>Параметри пошуку</b></legend>
             <form action="https://fom.in.ua/echo" method="post"> 
-                <fieldset><p><label for="typ"><b>Тип кузову</b></label>
-                    <select id="typ" size="1">
-                        <option value="y1">Седан</option>
-                        <option value="y2">Універсал</option>
-                        <option value="y3">Гетчбек</option>
-                        <option value="y4">Купе</option>
-                        <option value="y5">Лімузин</option>
-                        <option value="y6">Мінівен</option>
-                    </select>
+                <fieldset>
+                    <legend><b>Параметри пошуку</b></legend>
+                    <p><label for="typ"><b>Тип кузову</b></label>
+                        <select id="typ" size="1">
+                            <option value="y1">Седан</option>
+                            <option value="y2">Універсал</option>
+                            <option value="y3">Гетчбек</option>
+                            <option value="y4">Купе</option>
+                            <option value="y5">Лімузин</option>
+                            <option value="y6">Мінівен</option>
+                        </select></p>
                 </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for="marka"><b>Марка авто</b></label>
-                        <select id="marka" size="1">
-                            <option value="s1">Audi</option>
-                            <option value="s2">Aston Martin</option>
-                            <option value="s3">Bentley</option>
-                            <option value="s4">BMW</option>
-                            <option value="s5">Chevrolet</option>
-                            <option value="s6">Citroen</option>
-                            <option value="s7">FIAT</option>
-                            <option value="s8">Ford</option>
-                            <option value="s9">Honda</option>
-                            <option value="s10">Hyundai</option>
-                            <option value="s11">Lexus</option>
-                            <option value="s12">Mercedes-Benz</option>
-                            <option value="s13">Nissan</option>
-                            <option value="s14">Opel</option>
-                            <option value="s15">Peugeot</option>
-                        </select>
+                    <fieldset>
+                        <p><label for="marka"><b>Марка авто</b></label>
+                            <select id="marka" size="1">
+                                <option value="s1">Audi</option>
+                                <option value="s2">Aston Martin</option>
+                                <option value="s3">Bentley</option>
+                                <option value="s4">BMW</option>
+                                <option value="s5">Chevrolet</option>
+                                <option value="s6">Citroen</option>
+                                <option value="s7">FIAT</option>
+                                <option value="s8">Ford</option>
+                                <option value="s9">Honda</option>
+                                <option value="s10">Hyundai</option>
+                                <option value="s11">Lexus</option>
+                                <option value="s12">Mercedes-Benz</option>
+                                <option value="s13">Nissan</option>
+                                <option value="s14">Opel</option>
+                                <option value="s15">Peugeot</option>
+                            </select></p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for="country"><b>Країна виробник</b></label>
-                        <select id="country" size="1">
-                            <option value="w1">Germany</option>
-                            <option value="w2">Italy</option>
-                            <option value="w3">France</option>
-                            <option value="w4">Japan</option>
-                            <option value="w5">USA</option>
-                        </select>  
+                    <fieldset>
+                        <p><label for="country"><b>Країна виробник</b></label>
+                            <select id="country" size="1">
+                                <option value="w1">Germany</option>
+                                <option value="w2">Italy</option>
+                                <option value="w3">France</option>
+                                <option value="w4">Japan</option>
+                                <option value="w5">USA</option>
+                            </select></p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for="priceod"><b>Ціна від</b></label>
-                        <input type="number" value="0" min="500" max="10000000" step="50" id="priceod">
-                    <label for="pricedo"><b>до</b></label>   
-                        <input type="number" value="0" min="500" max="10000000" step="50" id="pricedo">
+                    <fieldset>
+                        <p><label for="priceod"><b>Ціна від</b></label>
+                            <input type="number" value="0" min="500" max="10000000" step="50" id="priceod">
+                        <label for="pricedo"><b>до</b></label>   
+                            <input type="number" value="0" min="500" max="10000000" step="50" id="pricedo"></p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for="yearod"><b>Рік випуску від</b></label>
-                        <input type="number" value="0" min="1980" max="2023" step="1" id="yearod">
-                    <label for="yeardo"><b>до</b></label>   
-                        <input type="number" value="0" min="1980" max="2023" step="1" id="yeardo">
+                    <fieldset>
+                        <p><label for="yearod"><b>Рік випуску від</b></label>
+                            <input type="number" value="0" min="1980" max="2023" step="1" id="yearod">
+                        <label for="yeardo"><b>до</b></label>   
+                            <input type="number" value="0" min="1980" max="2023" step="1" id="yeardo"></p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for=""><b>Стан</b></label>
-                        <input type="radio" name="look" value="nenova">Вживана
-                        <input type="radio" name="look" value="nova">Нова
+                    <fieldset>
+                        <p><label><b>Стан</b></label>
+                            <input type="radio" name="look" value="nenova">Вживана
+                            <input type="radio" name="look" value="nova">Нова</p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for=""><b>Тип палива</b></label>
-                        <input type="checkbox" name="a" value="diezel">Дизель
-                        <input type="checkbox" name="a" value="gasoline">Бензин
-                        <input type="checkbox" name="a" value="gas-gasoline">Газ-Бензин
-                        <input type="checkbox" name="a" value="electric">Електричний
-                        <input type="checkbox" name="a" value="hybrid">Гібрид
+                    <fieldset>
+                        <p><label><b>Тип палива</b></label>
+                            <input type="checkbox" name="a" value="diezel">Дизель
+                            <input type="checkbox" name="a" value="gasoline">Бензин
+                            <input type="checkbox" name="a" value="gas-gasoline">Газ-Бензин
+                            <input type="checkbox" name="a" value="electric">Електричний
+                            <input type="checkbox" name="a" value="hybrid">Гібрид</p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for=""><b>Тип коробки передач</b></label>
-                        <input type="checkbox" name="b" value="mechanical">Механічна
-                        <input type="checkbox" name="b" value="automat">Автоматична
-                        <input type="checkbox" name="b" value="robotic">Роботизована
-                        <input type="checkbox" name="b" value="variable">Варіативна
+                    <fieldset>
+                        <p><label><b>Тип коробки передач</b></label>
+                            <input type="checkbox" name="b" value="mechanical">Механічна
+                            <input type="checkbox" name="b" value="automat">Автоматична
+                            <input type="checkbox" name="b" value="robotic">Роботизована
+                            <input type="checkbox" name="b" value="variable">Варіативна</p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for="color"><b>Колір</b></label>
-                        <select id="color" size="1">
-                            <option value="c1">Білий</option>
-                            <option value="c2">Сірий</option>
-                            <option value="c3">Чорний</option>
-                            <option value="c4">Синій</option>
-                            <option value="c5">Червоний</option>
-                            <option value="c6">Коричневий</option>
-                            <option value="c7">Бежевий</option>
-                            <option value="c8">Жовтий</option>
-                            <option value="c9">Золотий</option>
-                            <option value="c10">зелений</option>
-                            <option value="c11">Оранжевий</option>
-                            <option value="c12">Фіщлетовий</option>
-                            <option value="c13">Блакитний</option>
-                            <option value="c14">Оливковий</option>
-                            <option value="c15">Перламутровий</option>
-                        </select>
+                    <fieldset>
+                        <p><label for="color"><b>Колір</b></label>
+                            <select id="color" size="1">
+                                <option value="c1">Білий</option>
+                                <option value="c2">Сірий</option>
+                                <option value="c3">Чорний</option>
+                                <option value="c4">Синій</option>
+                                <option value="c5">Червоний</option>
+                                <option value="c6">Коричневий</option>
+                                <option value="c7">Бежевий</option>
+                                <option value="c8">Жовтий</option>
+                                <option value="c9">Золотий</option>
+                                <option value="c10">зелений</option>
+                                <option value="c11">Оранжевий</option>
+                                <option value="c12">Фіщлетовий</option>
+                                <option value="c13">Блакитний</option>
+                                <option value="c14">Оливковий</option>
+                                <option value="c15">Перламутровий</option>
+                        </select></p>
                     </fieldset>
-                </p>
-                <p>
-                    <fieldset><label for=""><b>Комфорт</b></label>
-                        <p><input type="checkbox" name="k1" value="leather salon">Шкіряний салон</p>
-                        <input type="checkbox" name="k1" value="seat heating">Обігрів сидінь
-                        <p><input type="checkbox" name="k1" value="pre-start heater">Передпусковий обігрвівач</p>
-                        <input type="checkbox" name="k1" value="parktronics">Парктроніки
-                        <p><input type="checkbox" name="k1" value="subwoofer">Сабвуфер</p>
+                    <fieldset>
+                        <p><label><b>Комфорт</b></label>
+                            <input type="checkbox" name="k1" value="leather salon">Шкіряний салон
+                            <input type="checkbox" name="k1" value="seat heating">Обігрів сидінь
+                            <input type="checkbox" name="k1" value="pre-start heater">Передпусковий обігрвівач
+                            <input type="checkbox" name="k1" value="parktronics">Парктроніки
+                            <input type="checkbox" name="k1" value="subwoofer">Сабвуфер</p>
                     </fieldset>
-                </p>
                 <p><button style="color: rgb(255, 0, 0);" type="submit"><b>Шукати</b></button></p>
             </form>
-    </fieldset>
 </body>
 </html>
